@@ -26,7 +26,7 @@ ros2 run new_cobot_moveit multi_waypoint_cartesian
 gedit ~/.bashrc
 ```
 
-*Copy these lines at the end of the file.
+* Copy these lines at the end of the file.
 
 ```
 source ~/cobot_ws/install/setup.bash
