@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<robot name="cobot_nextup" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find new_cobot_moveit)/urdf/cobot.transmission.xacro" />
+  <xacro:include filename="$(find new_cobot_moveit)/urdf/cobot.gazebo.xacro" />
+  <xacro:include filename="$(find new_cobot_moveit)/urdf/cobot_nextup.ros2_control.xacro" />
+  
+  <xacro:include filename="$(find new_cobot_moveit)/urdf/cobot_nextup.urdf.xacro" />
+
+</robot>

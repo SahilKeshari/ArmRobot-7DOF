@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+    <include file="$(find-pkg-share new_cobot_moveit)/launch/gazebo.launch.py"/>
+
+    <!-- <include launchpy="bash -c 'sleep 5'" /> -->
+    
+    <include file="$(find-pkg-share new_cobot_moveit)/launch/demo.launch.py"/>
+
+</launch>

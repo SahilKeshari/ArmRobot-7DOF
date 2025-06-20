@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
+
+    <gazebo reference="base_link">
+        <selfCollide>true</selfCollide>
+    </gazebo>
+    <gazebo reference="lift_link">
+        <selfCollide>true</selfCollide>
+    </gazebo>
+    <gazebo reference="robot_base_link">
+        <selfCollide>true</selfCollide>
+    </gazebo>
+    <gazebo reference="link1">
+      <selfCollide>true</selfCollide>
+    </gazebo>
+    <gazebo reference="link2">
+      <selfCollide>true</selfCollide>
+    </gazebo>
+    <gazebo reference="link3">
+      <selfCollide>true</selfCollide>
+    </gazebo>
+    <gazebo reference="link4">
+      <selfCollide>true</selfCollide>
+    </gazebo>
+    <gazebo reference="link5">
+      <selfCollide>true</selfCollide>
+    </gazebo>
+    <gazebo reference="link6">
+      <selfCollide>true</selfCollide>
+    </gazebo>
+
+    <gazebo>
+      <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+          <robot_param>robot_description</robot_param>
+          <robot_param_node>robot_state_publisher</robot_param_node>
+          <parameters>$(find new_cobot_moveit)/config/gazebo_controllers.yaml</parameters> 
+      </plugin>  
+    </gazebo>
+
+</robot>
