@@ -20,7 +20,14 @@ ros2 run new_cobot_moveit multi_waypoint_cartesian
 ```
 
 
-### Note: Before running put these inside the .bashrc file, helps the Gazebo to find the urdf. Replace `cobot_ws` with the name of your workspace.
+### Note: Before running put these inside the `.bashrc` file, helps the Gazebo to find the meshes. Replace `cobot_ws` with the name of your workspace.
+#### To Open .bashrc
+```
+gedit ~/.bashrc
+```
+
+*Copy these lines at the end of the file.
+
 ```
 source ~/cobot_ws/install/setup.bash
 export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:$(ros2 pkg prefix new_cobot_moveit)/share
